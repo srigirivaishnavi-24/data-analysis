@@ -45,23 +45,23 @@ print(df.tail(9))"""
 #describe()->summary of described statistics for numerical columns in a dataframe
 #print(df.describe())
 
-#shapes-> it is used to know the shape of the datafram like dimensions to quickly understand
-#print(df.shape)
+#shapes-> it is used to know the shape of the datafram like dimensions to quickly understand ->no of rows
+#print("the shape:",df.shape)
 #columns-> it is used to know the how many col's with names present in the dataframe to understand the structur
-#print(df.columns)
+#print("the columns:",df.columns)
 
 #selecting columns-> to select any specific col or col's from dataframe
 #single col->df["col name"]
-#multiple col's->df[["col1","col2"....]]
-#print(df["Customer Name"])
+#multiple col's->df[["col1","col2"....]]"""
+"""print(df["Customer Name"])
 
-"""subset=df[["Order ID", "C#ustomer Name"]]
+subset=df[["Order ID", "Customer Name"]]
 print(subset)
 print(df.columns)"""
 
 #filtering-> it use to print on the condition that are applyed on the dataframe
 #single conditon-> df["col name"]>condition (we can use any kind of operators)
 #multiple conditions->df["col1 name"]>condition  and ["col2 name"]>condition(we can use the logical operators)
-"""print(df[df["Sales"]>500])
+print(df[df["Sales"]>500])
 print(df[(df["Sales"]>500) & (df["Discount"]>100)])
-print(df[(df["Sales"]>500) or (df["Discount"]>100)])"""
+print(df[(df["Sales"]>500) | (df["Discount"]>100)])
